@@ -1,0 +1,10 @@
+source /data01nfs/user/liupf/miniconda3/bin/activate
+conda activate bowtie2
+bowtie2-build /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_votu.fasta /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref
+
+bowtie2 -x /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref -1 /data02nfs/Project/QY1_2022_meta/QY1-1/QYJanS1_R1_trimmed.fq.gz -2 /data02nfs/Project/QY1_2022_meta/QY1-1/QYJanS1_R2_trimmed.fq.gz -S /datanode03/zhaoy/host_coverm/QYJanS1.sam --threads 4 --sensitive --no-unal
+bowtie2 -x /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref -1 /data02nfs/Project/QY1_2022_meta/QY1-1/QYJanS7_R1_trimmed.fq.gz -2 /data02nfs/Project/QY1_2022_meta/QY1-1/QYJanS7_R2_trimmed.fq.gz -S /datanode03/zhaoy/host_coverm/QYJanS7.sam --threads 4 --sensitive --no-unal
+bowtie2 -x /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref -1 /data02nfs/Project/QY1_2022_meta/QY1-1/QYJanS9_R1_trimmed.fq.gz -2 /data02nfs/Project/QY1_2022_meta/QY1-1/QYJanS9_R2_trimmed.fq.gz -S /datanode03/zhaoy/host_coverm/QYJanS9.sam --threads 4 --sensitive --no-unal
+bowtie2 -x /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref -1 /data02nfs/Project/QY1_2022_meta/QY1-1/QYMayS1_R1_trimmed.fq.gz -2 /data02nfs/Project/QY1_2022_meta/QY1-1/QYMayS1_R1_trimmed.fq.gz -S /datanode03/zhaoy/host_coverm/QYMayS1.sam --threads 4 --sensitive --no-unal
+bowtie2 -x /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref -1 /data02nfs/Project/QY1_2022_meta/QY1-1/QYMayS7_R1_trimmed.fq.gz -2 /data02nfs/Project/QY1_2022_meta/QY1-1/QYMayS7_R1_trimmed.fq.gz -S /datanode03/zhaoy/host_coverm/QYMayS7.sam --threads 4 --sensitive --no-unal
+bowtie2 -x /datanode03/zhaoy/QY/QY_virus/coverm/qy-meta2022_vrius_bowtie2_ref -1 /data02nfs/Project/QY1_2022_meta/QY1-1/QYMayS9_R1_trimmed.fq.gz -2 /data02nfs/Project/QY1_2022_meta/QY1-1/QYMayS9_R1_trimmed.fq.gz -S /datanode03/zhaoy/host_coverm/QYMayS9.sam --threads 4 --sensitive --no-unal

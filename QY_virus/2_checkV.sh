@@ -1,0 +1,2 @@
+source activate /datanode03/zhaoy/.conda/envs/checkv/ 
+checkv end_to_end /datanode03/zhaoy/QY/QY_virus/prediction/4_method_viral_prediction/QY_virus-virus_filtered.fna /datanode03/zhaoy/QY/QY_virus/prediction/4_method_viral_prediction/QY-virus-checkv --remove_tmp -t 50 -d /datanode03/zhaoy/database/checkv-db-v1.5/
